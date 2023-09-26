@@ -1,8 +1,8 @@
 # B-MTGNN
 This is a PyTorch implementation of the Bayesian model proposed in the paper: "Forecasting Cyber Threats and Pertinent Technologies".
-The model forecasts the graph of cyber attacks and pertinent technologies 3 years in advance, by extending the [MTGNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403118) model proposed by Wu et al.
+The model forecasts the graph of cyber-attacks and pertinent technologies 3 years in advance, while extending the [MTGNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403118) model proposed by Wu et al. The graph includes 26 rapidly increasing and emerging attacks and 98 pertinent technologies, each represented by a single node. The value of the node represents the trend.
 
-In this model, we employ the Bayesian approach to capture epistemic uncertainty. Specifically, we employ the Monte Carlo dropout method where the use of dropout neurons during inference provides a Bayesian approximation of the deep Gaussian processes. Therefore, during the prediction phase, the trained model runs multiple times, which results in a distribution of prediction (representing the uncertainty) rather than a single point.
+In our extension for the model, we employ the Bayesian approach to capture epistemic uncertainty. Specifically, we employ the Monte Carlo dropout method where the use of dropout neurons during inference provides a Bayesian approximation of the deep Gaussian processes. Therefore, during the prediction phase, the trained model runs multiple times, which results in a distribution of prediction (representing the uncertainty) rather than a single point.
 
 ## Requirements
 The model is implemented using Python3 with dependencies specified in requirements.txt
@@ -13,72 +13,14 @@ All data files can be found in the directory called **data**.
 The file **smoothing.py** performs double exponential smoothing on the data (**data.txt**) and produces the file **sm_data.csv**. These data files including the graph adjacency file (**graph.csv**) can be found in the directory called **data**.
 
 ## Hyper-parameter Optimisation
-The hyper-parameter optimisation is performed in the file **train_test.py**. This script performs random search to produce the optimal set of hyper-parameters. These hyper-parameters are finally saved as an output in the file called **hp.txt**, which is in the directory **model/Bayesian**. The output also includes validation and testing results when using the optimal set of hyper-parameters. These results include plots for the predicted curves against the actual curves. These are saved in the directories called **Validation** and **Testing** in the directory **model/Bayesian**. For the evaluation, 2 metrics are used namely the Root Relative Squared Error (RSE) and the Relative Absolute Error (RAE). These metrics are saved in the same directories (Validation and Testing), and the average value of these metrics across 142 nodes is also displayed on the console as a final output. 
+The hyper-parameter optimisation is performed in the file **train_test.py**. This script performs random search to produce the optimal set of hyper-parameters. These hyper-parameters are finally saved as an output in the file called **hp.txt**, which is in the directory **model/Bayesian**. The output also includes validation and testing results when using the optimal set of hyper-parameters. These results include plots for the predicted curves against the actual curves. These are saved in the directories called **Validation** and **Testing** in the directory **model/Bayesian**. For the evaluation, 2 metrics are used namely the Root Relative Squared Error (RSE) and the Relative Absolute Error (RAE). These metrics are saved in the same directories (Validation and Testing), and the average values of these metrics across 142 nodes are also displayed on the console as a final output. 
 
-# Create data directories
-mkdir -p data/{METR-LA,PEMS-BAY}
+## Operational Model
+The script in the file **train.py** trains the final model on the full data using the optimal hyper-parameters stored in the file **hp.txt**. The output is the operational model called **o_model.pt**, which can be used to forecast the graph up to 3 years in advance. The operational model is saved in the directory **model/Bayesian**. 
 
-# METR-LA
-python generate_training_data.py --output_dir=data/METR-LA --traffic_df_filename=data/metr-la.h5
 
-# PEMS-BAY
-python generate_training_data.py --output_dir=data/PEMS-BAY --traffic_df_filename=data/pems-bay.h5
+## Future Forecast
+The script in the file **forecast.py** uses the operational model **o_model.pt** in the directory **model/Bayesian** to produce 3 years forecast for the trend of cyber-attacks and the pertinent technologies (graph). The results include numerical forecasts of each node stored in the directory **model\Bayesian\forecast\data**. In addition, a plot for each attack and its pertinent technologies, where a future gap was identified between the two based on the forecast is provided in the directory **model\Bayesian\forecast\plots**. Within these plots, the gap is highlighted in a distinct colour. The numerical forecast for these gaps is also produced in the directory **model\Bayesian\forecast\gap** in a csv format, where each file includes the gaps of a single attack.
 
-```
+Additionally, the script **forecast.py** produces plots for the forecast of each pertinent technology separately, which can be useful for the purpose of visualisation and producing a unified trend cycle. These plots are saved in the directory **model\Bayesian\forecast\pt_plots**.
 
-## Model Training
-
-### Single-step
-
-* Solar-Energy
-
-```
-python train_single_step.py --save ./model-solar-3.pt --data ./data/solar_AL.txt --num_nodes 137 --batch_size 4 --epochs 30 --horizon 3
-#sampling
-python train_single_step.py --num_split 3 --save ./model-solar-sampling-3.pt --data ./data/solar_AL.txt --num_nodes 137 --batch_size 16 --epochs 30 --horizon 3
-```
-* Traffic 
-
-```
-python train_single_step.py --save ./model-traffic3.pt --data ./data/traffic.txt --num_nodes 862 --batch_size 16 --epochs 30 --horizon 3
-#sampling
-python train_single_step.py --num_split 3 --save ./model-traffic-sampling-3.pt --data ./data/traffic --num_nodes 321 --batch_size 16 --epochs 30 --horizon 3
-```
-
-* Electricity
-
-```
-python train_single_step.py --save ./model-electricity-3.pt --data ./data/electricity.txt --num_nodes 321 --batch_size 4 --epochs 30 --horizon 3
-#sampling 
-python train_single_step.py --num_split 3 --save ./model-electricity-sampling-3.pt --data ./data/electricity.txt --num_nodes 321 --batch_size 16 --epochs 30 --horizon 3
-```
-
-* Exchange-Rate
-
-```
-python train_single_step.py --save ./model/model-exchange-3.pt --data ./data/exchange_rate.txt --num_nodes 8 --subgraph_size 8  --batch_size 4 --epochs 30 --horizon 3
-#sampling
-python train_single_step.py --num_split 3 --save ./model-exchange-3.pt --data ./data/exchange_rate.txt --num_nodes 8 --subgraph_size 2  --batch_size 16 --epochs 30 --horizon 3
-```
-### Multi-step
-* METR-LA
-
-```
-python train_multi_step.py --adj_data ./data/sensor_graph/adj_mx.pkl --data ./data/METR-LA --num_nodes 207
-```
-* PEMS-BAY
-
-```
-python train_multi_step.py --adj_data ./data/sensor_graph/adj_mx_bay.pkl --data ./data/PEMS-BAY/ --num_nodes 325
-```
-
-## Citation
-
-```
-@inproceedings{wu2020connecting,
-  title={Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks},
-  author={Wu, Zonghan and Pan, Shirui and Long, Guodong and Jiang, Jing and Chang, Xiaojun and Zhang, Chengqi},
-  booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
-  year={2020}
-}
-```
