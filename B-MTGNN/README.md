@@ -4,10 +4,10 @@ The model forecasts the graph of cyber attacks and pertinent technologies 3 year
 
 ## Requirements
 The model is implemented using Python3 with dependencies specified in requirements.txt
-## Data Preparation
-### Multivariate time series datasets
 
-Download Solar-Energy, Traffic, Electricity, Exchange-rate datasets from [https://github.com/laiguokun/multivariate-time-series-data](https://github.com/laiguokun/multivariate-time-series-data). Uncompress them and move them to the data folder.
+## Data Smoothing
+
+The file **smoothing.py** performs double exponential smoothing on the data (data.txt) and produces the file **sm_data.csv**. These data files including the graph adjacency file (graph.txt) can be found in the directory called **data**.
 
 ### Traffic datasets
 Download the METR-LA and PEMS-BAY dataset from [Google Drive](https://drive.google.com/open?id=10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX) or [Baidu Yun](https://pan.baidu.com/s/14Yy9isAIZYdU__OYEQGa_g) provided by [Li et al.](https://github.com/liyaguang/DCRNN.git) . Move them into the data folder. 
