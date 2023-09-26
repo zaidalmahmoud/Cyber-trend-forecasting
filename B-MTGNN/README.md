@@ -1,6 +1,6 @@
 # B-MTGNN
 This is a PyTorch implementation of the model in the paper: "Forecasting Cyber Threats and Pertinent Technologies".
-The model forecasts the graph of cyber attacks and pertinent technologies 3 years in advance, while using and extending the [MTGNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403118) model proposed by Wu et al.
+The model forecasts the graph of cyber attacks and pertinent technologies 3 years in advance, while extending the [MTGNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403118) model proposed by Wu et al.
 
 ## Requirements
 The model is implemented using Python3 with dependencies specified in requirements.txt
