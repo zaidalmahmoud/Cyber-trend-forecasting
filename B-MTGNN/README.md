@@ -8,9 +8,9 @@ In our extension for the model, we employ the Bayesian approach to capture epist
 The model is implemented using Python3 with dependencies specified in requirements.txt
 
 ## Data Smoothing
-All data files can be found in the directory called **data**.
+All data files including the graph adjacency file can be found in the directory called **data**.
 
-The file **smoothing.py** performs double exponential smoothing on the data (**data.txt**) and produces the file **sm_data.csv**. These data files including the graph adjacency file (**graph.csv**) can be found in the directory called **data**.
+The file **smoothing.py** performs double exponential smoothing on the data (**data.txt**) and produces the file **sm_data.csv**.
 
 ## Hyper-parameter Optimisation
 The hyper-parameter optimisation is performed in the file **train_test.py**. This script performs random search to produce the optimal set of hyper-parameters. These hyper-parameters are finally saved as an output in the file called **hp.txt**, which is in the directory **model/Bayesian**. The output also includes validation and testing results when using the optimal set of hyper-parameters. These results include plots for the predicted curves against the actual curves. These are saved in the directories called **Validation** and **Testing** in the directory **model/Bayesian**. For the evaluation, 2 metrics are used namely the Root Relative Squared Error (RSE) and the Relative Absolute Error (RAE). These metrics are saved in the same directories (Validation and Testing), and the average values of these metrics across 142 nodes are also displayed on the console as a final output. 
