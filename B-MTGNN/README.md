@@ -30,3 +30,8 @@ The script in the file **forecast.py** uses the operational model **o_model.pt**
 
 Additionally, the script in the file **pt_plots.py** produces plots for the forecast of each pertinent technology separately, which can be useful for the purpose of visualisation and producing a unified trend cycle. These plots are saved in the directory **model/Bayesian/forecast/pt_plots**.
 
+Below is an example for the past and predicted future data for the Password Attack and its pertinent technologies, with the gaps highlighted in distinct colours.
+
+<p align="center">
+<a href="url"><img src="./model/Bayesian/Forecast/Plots/Password%20Attack.png" align="centre"  width="600"   ></a>
+</p>
