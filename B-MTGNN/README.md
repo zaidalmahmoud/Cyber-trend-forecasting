@@ -7,7 +7,7 @@ The model is implemented using Python3 with dependencies specified in requiremen
 
 ## Data Smoothing
 
-The file **smoothing.py** performs double exponential smoothing on the data (data.txt) and produces the file **sm_data.csv**. These data files including the graph adjacency file (graph.txt) can be found in the directory called **data**.
+The file **smoothing.py** performs double exponential smoothing on the data (**data.txt**) and produces the file **sm_data.csv**. These data files including the graph adjacency file (**graph.csv**) can be found in the directory called **data**.
 
 ### Traffic datasets
 Download the METR-LA and PEMS-BAY dataset from [Google Drive](https://drive.google.com/open?id=10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX) or [Baidu Yun](https://pan.baidu.com/s/14Yy9isAIZYdU__OYEQGa_g) provided by [Li et al.](https://github.com/liyaguang/DCRNN.git) . Move them into the data folder. 
