@@ -15,9 +15,9 @@ The file **smoothing.py** performs double exponential smoothing on the data (**d
 ## Hyper-parameter Optimisation
 The hyper-parameter optimisation is performed in the file **train_test.py**. This script performs random search to produce the optimal set of hyper-parameters. These hyper-parameters are finally saved as an output in the file called **hp.txt**, which is in the directory **model/Bayesian**. The output also includes validation and testing results when using the optimal set of hyper-parameters. These results include plots for the predicted curves against the actual curves. These are saved in the directories called **Validation** and **Testing** in the directory **model/Bayesian**. For the evaluation, 2 metrics are used namely the Root Relative Squared Error (RSE) and the Relative Absolute Error (RAE). These metrics are saved in the same directories (Validation and Testing), and the average values of these metrics across 142 nodes are also displayed on the console as a final output. 
 
-
+Below in an example of the model validation results for the forecast of Password Attack, where RAE=0.37
 <p align="center">
-<a href="url"><img src="./model/Bayesian/Validation/Password Attack_Validation.png" align="centre"  width="700"   ></a>
+<a href="url"><img src="./model/Bayesian/Validation/Password Attack_Validation.png" align="centre"  width="600"   ></a>
 </p>
 
 
