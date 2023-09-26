@@ -1,0 +1,13 @@
+1 run average
+
+
+
+valid   rse     rae
+mean    0.5159  0.6557
+std     0.0000  0.0000
+
+
+
+test    rse     rae
+mean    0.6573  0.7476
+std     0.0000  0.0000
