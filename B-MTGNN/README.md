@@ -33,5 +33,5 @@ Additionally, the script in the file **pt_plots.py** produces plots for the fore
 Below is an example for the past and predicted future data for the Password Attack and its pertinent technologies, with the gaps highlighted in distinct colours.
 
 <p align="center">
-<a href="url"><img src="./model/Bayesian/Forecast/Plots/Password%20Attack.png" align="centre"  width="600"   ></a>
+<a href="url"><img src="./model/Bayesian/Forecast/plots/Password%20Attack.png" align="centre"  width="600"   ></a>
 </p>
