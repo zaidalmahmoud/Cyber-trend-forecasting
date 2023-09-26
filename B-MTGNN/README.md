@@ -1,18 +1,19 @@
 # B-MTGNN
-This is a PyTorch implementation of the model in the paper: "Forecasting Cyber Threats and Pertinent Technologies".
-The model forecasts the graph of cyber attacks and pertinent technologies 3 years in advance, while extending the [MTGNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403118) model proposed by Wu et al.
+This is a PyTorch implementation of the Bayesian model proposed in the paper: "Forecasting Cyber Threats and Pertinent Technologies".
+The model forecasts the graph of cyber attacks and pertinent technologies 3 years in advance, by extending the [MTGNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403118) model proposed by Wu et al.
+
+In this model, we employ the Bayesian approach to capture epistemic uncertainty. Specifically, we employ the Monte Carlo dropout method where the use of dropout neurons during inference provides a Bayesian approximation of the deep Gaussian processes. Therefore, during the prediction phase, the trained model runs multiple times, which results in a distribution of prediction (representing the uncertainty) rather than a single point.
 
 ## Requirements
 The model is implemented using Python3 with dependencies specified in requirements.txt
 
 ## Data Smoothing
+All data files can be found in the directory called **data**.
 
 The file **smoothing.py** performs double exponential smoothing on the data (**data.txt**) and produces the file **sm_data.csv**. These data files including the graph adjacency file (**graph.csv**) can be found in the directory called **data**.
 
-### Traffic datasets
-Download the METR-LA and PEMS-BAY dataset from [Google Drive](https://drive.google.com/open?id=10FOTa6HXPqX8Pf5WRoRwcFnW9BrNZEIX) or [Baidu Yun](https://pan.baidu.com/s/14Yy9isAIZYdU__OYEQGa_g) provided by [Li et al.](https://github.com/liyaguang/DCRNN.git) . Move them into the data folder. 
-
-```
+## Hyper-parameter Optimisation
+The hyper-parameter optimisation is performed in the file **train_test.py**. This script performs random search to produce the optimal model. The output includes the optimal set of hyper-parameters in the file *hp.txt* which is in the directory **model/Bayesian**
 
 # Create data directories
 mkdir -p data/{METR-LA,PEMS-BAY}
