@@ -8,7 +8,7 @@ In our extension for the model, we employ the Bayesian approach to capture epist
 The model is implemented using Python3 with dependencies specified in requirements.txt
 
 ## Data Smoothing
-All data files including the graph adjacency file can be found in the directory called **data**.
+All data files used by the model including the graph adjacency file can be found in the directory called **data**.
 
 The file **smoothing.py** performs double exponential smoothing on the data (**data.txt**) and produces the file **sm_data.csv**.
 
