@@ -1,0 +1,217 @@
+Phishing
+Spam
+spamming
+Scam
+scamming
+Password Attack
+Password Attacks
+Password
+SQL Injection
+SQLI
+SQL
+Defacement
+Trojan
+Vulnerability
+Vulnerabilities
+Advanced persistent threat
+Advanced persistent
+Advanced
+persistent
+APT
+XSS
+Cross site scripting
+Cross site
+scripting
+script
+Cross
+site
+Data Breach
+Data
+Disinformation/Misinformation
+Disinformation
+Misinformation
+Targeted Attack
+Targeted
+Attack
+Adware
+Malvertising
+Backdoor
+Cryptojacking
+Worms
+Spyware
+DNS Spoofing
+DNS Poisoning
+Domain Name System Poisoning
+Domain Name System Spoofing
+Spoofing
+Spoof
+DNS Cache Poisoning
+Domain Name System cache poisoning
+Domain Name System cache
+Domain Name System poisoning
+System poisoning
+DNS
+Domain Name System
+Cache
+Poisoning
+WannaCry Ransomware
+WannaCry
+Wiper
+Pharming
+Insider Threat
+Insider
+Threat
+Drive-by
+Drive
+by
+hacking
+Rootkit
+Data Poisoning
+Keylogger
+Keystroke logging
+Keylogging
+Keylog
+DNS Tunneling
+DNS Tunnel
+Tunneling
+Tunnel
+Session Hijacking
+Session
+Hijacking
+DNS Hijacking
+DNS redirection
+redirection
+URL manipulation
+manipulation
+URL
+DDoS
+Distributed Denial of Service
+Denial of Service
+Denial
+Service
+of
+Ransomware
+Account Hijacking
+Account
+Zero-day
+Malware
+Brute Force Attack
+Brute Force
+Botnet
+MITM
+Man in the middle
+Man
+middle
+in
+the
+in the middle
+the middle
+the
+a
+Dropper
+Dropping
+Drop
+Adversarial Attack
+Adversarial
+Deepfake
+Deep learning
+machine learning
+Supply Chain
+Supply
+Chain
+IoT Device Attack
+IoT Device
+IoT
+Internet of things Device
+Internet
+Information
+Device
+things
+for
+Internet of things
+Protection
+Mitigation
+Defense
+Prevention
+Detection 
+Response 
+Blocking
+countermeasure
+countermeasures
+security
+security measure
+security measures
+Analysis
+Media
+Literacy
+Cyber Security
+Domain
+Name 
+System
+DNS Security
+Domain Name System Security
+DNS servers
+Domain Name System servers
+DNS server
+Domain Name System server
+web security
+Cybersecurity
+Security Software
+Software
+Research
+news
+social media
+fake news
+website
+email
+machine
+technology
+solution
+computer
+awareness
+training
+software
+testing
+software testing
+MAIL
+EMAIL SECURITY
+User
+education
+web
+CODE INJECTION
+WEB PAGE
+INTRUSION
+systems
+application
+SERVICES
+CACHE POISONING
+DOMAIN NAME SYSTEM (DNS) CACHE POISONING
+authorization
+authentication
+Artificial Intelligence
+WEBSITE SECURITY
+INFORMATION SECURITY
+NETWORK
+SECURITY
+NETWORKS
+NETWORKING
+NETWORK SECURITY
+MANAGEMENT
+BRUTE FORCE ATTACKS
+dns flooding
+dns flood
+url obfuscation
+MALWARE DETECTION
+CROSSSITE SCRIPTING (XSS) PREVENTION
+MALWARE ATTACK DETECTION
+SESSION FIXATION
+PASSWORD CRACKING
+DNS cache
+MAN IN THE MIDDLES (MITM)
+MAN IN THE MIDDLE (MITM)
+ADVERSARIAL MACHINE LEARNING
+renewable energy
+covert channel
+Security Systems
+Performance
+SOFTWARE VULNERABILITIES

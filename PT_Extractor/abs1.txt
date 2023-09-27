@@ -1,0 +1,23 @@
+RAP: RAnsomware Protection Scheme Based on Blockchain
+In this work, we propose a novel data backup scheme called RAP (RAnsomware Protection scheme based on blockchain) to make up for the existing deficiencies in mitigating DDoS attack. Based on the principle of data isolation, we first formally discuss the role of gateways in data backup systems and deploy mechanism on gateways to resist DDoS attacks. RAP employs an optimized all-or-nothing transform (AONT) and offers the scheme for setup, backups upload and data recovery through secure channel. We define and analyze the security of RAP for data confidentiality and DDoS attacks resistance. We instantiate RAP by a consortium blockchain based on Ethereum and evaluate its performance. The running time of each phase in RAP is less than 1 millisecond excluding the read/write delay of typic data size and our scheme would be compatible with most existing blockchains, which further demonstrate its practicality and scalability. © 2022 IEEE.
+backup
+blockchain
+component
+confidentiality
+DDoS attacks
+ransomware
+service availability
+Blockchain
+Malware
+Network security
+Backup
+Block-chain
+Component
+Confidentiality
+Data backups
+Data loss
+Data recovery
+DDoS Attack
+Protection schemes
+Services availability
+Denial-of-service attack

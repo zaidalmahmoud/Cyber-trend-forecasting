@@ -1,0 +1,20 @@
+Deep Neural Backdoor in Semi-Supervised Learning: Threats and Countermeasures
+Semi-Supervised Learning (SSL) is a powerful derivative for humans to discover the hidden knowledge, and will be a great substitute for data taggers. Although the availability of unlabeled data rises up a huge passion to SSL, the untrustness of unlabeled data leads to many unknown security risks. In this paper, we first identify an insidious backdoor threat of SSL where unlabeled training data are poisoned by backdoor methods migrated from supervised settings. Then, to further exploit this threat, a Deep Neural Backdoor (DeNeB) scheme is proposed, which requires less data poisoning budgets and produces stronger backdoor effectiveness. By poisoning a fraction of our unlabeled training data, the DeNeB achieves the illegal manipulation on the trained model without modifying the training process. Finally, an efficient detection-and-purification defense (DePuD) framework is proposed to thwart the proposed scheme. In DePuD, we construct a deep detector to locate trigger patterns in the unlabeled training data, and perform secured SSL training with purified unlabeled data where the detected trigger patterns are obfuscated. Extensive experiments based on benchmark datasets are performed to demonstrate the huge threatening of DeNeB and the effectiveness of DePuD. To the best of our knowledge, this is the first work to achieve the backdoor and its defense in semi-supervised learning. © 2005-2012 IEEE.
+backdoor
+detection-and-purification
+Semi-supervised learning
+unlabeled data
+Budget control
+Network security
+Supervised learning
+Backdoors
+Benchmark datasets
+Detection-and-purification
+Efficient detection
+Hidden knowledge
+Security risks
+Semi-supervised learning
+Training data
+Training process
+Unlabeled data
+Purification
