@@ -2,10 +2,10 @@
 This directory contains 5 Python scripts for building the features of our dataset. The features include monthly records for the following:
 
 1- The number of cyber-attack incidents in each country (NoI)<br>
-2- The number of mentions of each attack type in Elsevier abstracts (A_NoM) 
-3- The number of mentions of each Pertinent Technology (PT) in Elsevier abstracts (PT_NoM)
-4- The number of tweets about wars and political conflicts related to each country (ACA)
-5- The number of public holidays in each country (PH)
+2- The number of mentions of each attack type in Elsevier abstracts (A_NoM)<br>
+3- The number of mentions of each Pertinent Technology (PT) in Elsevier abstracts (PT_NoM)<br>
+4- The number of tweets about wars and political conflicts related to each country (ACA)<br>
+5- The number of public holidays in each country (PH)<br>
 
 ## Elsevier_Attacks
 This directory contains the script **A_NoM.py**, which extracts the feature **A_NoM** using Elsevier API. The input to the script is the list of attack types hardcoded at the beginning of the script (Please see the script for the detailed format). The output is the monthly mentions of each attack type in Elsevier research abstracts between July 2011 and December 2022. The output is saved to the file **Attacks_NoM.txt**, where each column in the file corresponds to a single attack type, according to the order provided, and each row corresponds to the month starting from July 2011.
