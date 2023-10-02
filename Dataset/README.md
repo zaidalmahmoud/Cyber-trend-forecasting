@@ -8,7 +8,7 @@ Below, we provide the name format of each feature within the dataset and explain
 4- Mentions-ATTACK: The monthly number of mentions for the attack type ATTACK in Elsevier abstracts.<br>
 5- WAR/CONFLICT COUNTRY: The number of tweets about wars and political conflicts related to the country COUNTRY.<br>
 6- WAR/CONFLICT ALL: The number of tweets about wars and political conflicts related to all countries in the dataset (sum).<br>
-7- COUNTRY_holiday: The monthly number of public holidays in the country COUNTRY.
+7- COUNTRY_holiday: The monthly number of public holidays in the country COUNTRY.<br>
 8- Holidays: The monthly number of public holidays in all countries in the dataset (sum).<br>
 9- Solution_PT_Mentions: The monthly number of mentions for the pertinent technology PT in Elsevier abstracts.<br>
 
