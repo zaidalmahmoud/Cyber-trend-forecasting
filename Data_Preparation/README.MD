@@ -1,7 +1,7 @@
 # Data Preparation Overview
 This directory contains 5 Python scripts for building the features of our dataset. The features include monthly records for the following:
 
-1- The number of cyber-attack incidents in each country (NoI)<br>
+1- The number of cyber-attack incidents in each country for each attack type (NoI)<br>
 2- The number of mentions of each attack type in Elsevier abstracts (A_NoM)<br>
 3- The number of mentions of each Pertinent Technology (PT) in Elsevier abstracts (PT_NoM)<br>
 4- The number of tweets about wars and political conflicts related to each country (ACA)<br>
