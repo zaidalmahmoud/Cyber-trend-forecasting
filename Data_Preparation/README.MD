@@ -17,7 +17,7 @@ This directory contains the script **A_NoM.py**, which extracts the feature **A_
 This directory contains the script **PT_NoM.py**, which extracts the feature **PT_NoM** using Elsevier API. The input to the script is the list of PTs hardcoded at the beginning of the script (please see the script for the detailed format). The output is the monthly mentions of each PT in Elsevier research abstracts between July 2011 and December 2022. The output is saved to the file **PTs_NoM.txt**, where each column in the file corresponds to a single PT, according to the order provided, and each row corresponds to the month starting from July 2011.
 
 ## Python_Holidays
-This directory contains the script **PH.py**, which extracts the feature **PH** using the Python Holidays package. This script produces the csv file "PH.csv" with the monthly number of public holidays in 36 countries in the period between July 2011 until December 2022.
+This directory contains the script **PH.py**, which extracts the feature **PH** using the Python Holidays package. This script produces the csv file **PH.csv** with the monthly number of public holidays in 36 countries in the period between July 2011 until December 2022.
 
 
 ## Notes/Requirements
