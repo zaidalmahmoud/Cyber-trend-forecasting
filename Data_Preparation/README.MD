@@ -16,10 +16,13 @@ This directory contains the script **A_NoM.py**, which extracts the feature **A_
 ## Elsevier_PTs
 This directory contains the script **PT_NoM.py**, which extracts the feature **PT_NoM** using Elsevier API. The input to the script is the list of PTs hardcoded at the beginning of the script (please see the script for the detailed format). The output is the monthly mentions of each PT in Elsevier research abstracts between July 2011 and December 2022. The output is saved to the file **PTs_NoM.txt**, where each column in the file corresponds to a single PT, according to the order provided, and each row corresponds to the month starting from July 2011.
 
+## Twitter_Tweets
+This directory contains the script **ACA.py**, which extracts the feature **ACA** using Twitter API. The script in the file **ACA.py** counts for each country the number of tweets about wars and political conflicts related to that country. The output is the monthly count of these tweets for each country in the period between July 2011 and December 2022. The output is saved to the file **ACA.csv**.  
+
 ## Python_Holidays
 This directory contains the script **PH.py**, which extracts the feature **PH** using the Python Holidays package. This script produces the csv file **PH.csv** with the monthly number of public holidays in 36 countries in the period between July 2011 until December 2022.
 
 
 ## Notes/Requirements
-For running **A_NoM.py** and **PT_NoM.py**, you should obtain Elsevier key and place it in the file **config.json** within the script directory.
+For running **A_NoM.py** and **PT_NoM.py**, you should obtain Elsevier key and place it in the file **config.json** within the script directory. For running the script **ACA.py**, you should obtain Twitter API bearer token and place it at the beginning of the script.
 
