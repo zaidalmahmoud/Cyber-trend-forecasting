@@ -1,8 +1,8 @@
 # Cyber trend forecasting
 
-This is a Python implementation of the platform proposed in the paper: "Forecasting Cyber Threats and Pertinent Technologies".
+This is a Python implementation of the framework proposed in the paper: "Forecasting Cyber Threats and Pertinent Technologies".
 
-This repository contains an end-to-end platform for forecasting the trend of cyber attacks and the pertinent technologies using graph neural network. This includes data preparation, model development, and future forecast.
+This repository contains an end-to-end framework for forecasting the trend of cyber attacks and the pertinent technologies using graph neural network. This includes data preparation, model development, and future forecast.
 
 ## Dataset
 The full constructed dataset can be found in the directory [**Dataset**](https://github.com/zaidalmahmoud/Cyber-trend-forecasting/tree/main/Dataset). More information about each feature can be found in the same directory.
