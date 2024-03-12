@@ -1,1 +1,1 @@
-
+The file **ARIMA.py** contains a script for training and assessing the ARIMA model's forecasting performance for 142 cyber trends, predicting 36 time-steps ahead (multistep forecast). A distinct model is constructed for each trend. Evaluation of the final results, comprising 36 times 142 values, is conducted based on RSE and RAE metrics. The forecast values are saved in **forecast_results_ARIMA.csv**. Upon completion of the script, RSE and RAE values are displayed on the terminal and can be copied and saved in **out_ARIMA.txt** for reference.
