@@ -18,3 +18,19 @@ The directory **B-MTGNN** contains a Python project for building the graph neura
 
 ## Comparative Evaluation
 The directory **Comparative_Evaluation** contains experiments for evaluating the performance of the B-MTGNN model against the MTGNN model as well as against four baseline models. Performance is assessed using two evaluation metrics: the Root Relative Squared Error (RSE) and the Relative Absolute Error (RAE). The baseline models include ARIMA, VAR, LSTM, and Transformer. For the LSTM and Transformer architectures, the evaluation covers both univariate and multivariate models. The evaluation of the B-MTGNN model includes evaluating five variations of the model. Each variation employs a different number of iterations, ranging from 10 to 50, to approximate the Bayesian model. The evaluation results show that the B-MTGNN model using 30 iterations outperforms all other models. For more information, please refer to the README file in the corresponding directory.
+
+# Citation
+```
+@article{ALMAHMOUD2025123836,
+title = {Forecasting Cyber Threats and Pertinent Mitigation Technologies},
+journal = {Technological Forecasting and Social Change},
+volume = {210},
+pages = {123836},
+year = {2025},
+issn = {0040-1625},
+doi = {https://doi.org/10.1016/j.techfore.2024.123836},
+url = {https://www.sciencedirect.com/science/article/pii/S0040162524006346},
+author = {Zaid Almahmoud and Paul D. Yoo and Ernesto Damiani and Kim-Kwang Raymond Choo and Chan Yeob Yeun}
+}
+
+```
