@@ -1,6 +1,6 @@
 # Cyber trend forecasting
 
-This is a Python implementation of the framework proposed in the paper: "[Forecasting Cyber Threats and Pertinent Alleviation Technologies](https://authors.elsevier.com/sd/article/S0040-1625(24)00634-6)".
+This is a Python implementation of the framework proposed in the paper: "[Forecasting Cyber Threats and Pertinent Mitigation Technologies](https://authors.elsevier.com/sd/article/S0040-1625(24)00634-6)".
 
 This repository contains an end-to-end framework for forecasting the trend of cyber attacks and pertinent alleviation technologies using graph neural network. This includes data preparation, model development, and future forecast.
 
