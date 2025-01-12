@@ -1,5 +1,5 @@
 # B-MTGNN
-This is a PyTorch implementation of the Bayesian model proposed in the paper: "Forecasting Cyber Threats and Pertinent Alleviation Technologies".
+This is a PyTorch implementation of the Bayesian model proposed in the paper: "[Forecasting Cyber Threats and Pertinent Mitigation Technologies](https://www.sciencedirect.com/science/article/pii/S0040162524006346)".
 The model forecasts the graph of cyber-attacks and pertinent technologies 3 years in advance, while extending the [MTGNN](https://dl.acm.org/doi/abs/10.1145/3394486.3403118) model proposed by Wu et al. The graph includes 26 rapidly increasing and emerging attacks and 98 pertinent technologies, each represented by a single node. The value of the node represents the trend.
 
 In our extension for the model, we employ the Bayesian approach to capture epistemic uncertainty. Specifically, we employ the Monte Carlo dropout method where the use of dropout neurons during inference provides a Bayesian approximation of the deep Gaussian processes. Therefore, during the prediction phase, the trained model runs multiple times, which results in a distribution of prediction (representing the uncertainty) rather than a single point.
